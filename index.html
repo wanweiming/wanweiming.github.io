@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wanweiming's page</title>
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <div id="WebGL-output"></div>
+
+    <div class="side-menu">
+      <div id="menuBtn">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu">
+        <a class="menu-item" href="#">home</a>
+      </div>
+      <div class="straight-line"></div>
+    </div>
+
+    <img class="planetImg" src="./img/planet.png" />
+
+    <div class="mainText">
+      <div class="mainTitle">this's my house</div>
+      <div class="cursor" style="left: 825px; top: 787px"></div>
+    </div>
+
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/dat.gui.min.js"></script>
+    <script src="./js/three.min.js"></script>
+    <script src="./js/index.js"></script>
+    <div class="dg ac">
+      <div class="dg main a" style="width: 245px">
+        <div
+          style="
+            width: 6px;
+            margin-left: -3px;
+            height: 0px;
+            cursor: ew-resize;
+            position: absolute;
+          "
+        ></div>
+        <ul class="closed" style="height: auto">
+          <li class="cr number has-slider">
+            <div>
+              <span class="property-name">radius</span>
+              <div class="c">
+                <div><input type="text" /></div>
+                <div class="slider">
+                  <div class="slider-fg" style="width: 100%"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cr number has-slider">
+            <div>
+              <span class="property-name">tube</span>
+              <div class="c">
+                <div><input type="text" /></div>
+                <div class="slider">
+                  <div class="slider-fg" style="width: 42.5%"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cr number has-slider">
+            <div>
+              <span class="property-name">radialSegments</span>
+              <div class="c">
+                <div><input type="text" /></div>
+                <div class="slider">
+                  <div class="slider-fg" style="width: 46.5%"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cr number has-slider">
+            <div>
+              <span class="property-name">tubularSegments</span>
+              <div class="c">
+                <div><input type="text" /></div>
+                <div class="slider">
+                  <div class="slider-fg" style="width: 15.7895%"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cr number has-slider">
+            <div>
+              <span class="property-name">p</span>
+              <div class="c">
+                <div><input type="text" /></div>
+                <div class="slider">
+                  <div class="slider-fg" style="width: 88.8889%"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cr number has-slider">
+            <div>
+              <span class="property-name">q</span>
+              <div class="c">
+                <div><input type="text" /></div>
+                <div class="slider">
+                  <div class="slider-fg" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cr number has-slider">
+            <div>
+              <span class="property-name">heightScale</span>
+              <div class="c">
+                <div><input type="text" /></div>
+                <div class="slider">
+                  <div class="slider-fg" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cr boolean">
+            <div>
+              <span class="property-name">asParticles</span>
+              <div class="c"><input type="checkbox" checked="checked" /></div>
+            </div>
+          </li>
+          <li class="cr boolean">
+            <div>
+              <span class="property-name">rotate</span>
+              <div class="c"><input type="checkbox" checked="checked" /></div>
+            </div>
+          </li>
+        </ul>
+        <div class="close-button" style="width: 245px">Open Controls</div>
+      </div>
+    </div>
+  </body>
+</html>
